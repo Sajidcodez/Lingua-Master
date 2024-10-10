@@ -64,7 +64,7 @@ def next_card():
         canvas.itemconfig(card_title, text="Italian", fill="black")
         canvas.itemconfig(card_word, text=current_card["Italian"], fill="black")
     canvas.itemconfig(card_background, image=card_front_img)
-    timer_flip = window.after(3000, func=flip_card)
+    timer_flip = window.after(5000, func=flip_card)
 
 # Function to flip the card
 def flip_card():
